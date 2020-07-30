@@ -1,0 +1,95 @@
+
+#button {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.title1 {
+    color: white
+}
+
+button {
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+button#btn0 {
+    margin-left: 350px;
+}
+
+div#restart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+button#guess {
+    background-color: blue;
+    color: white;
+}
+#guess:hover {
+    background-color: lightblue;
+}
+
+button#del {
+    background-color: red;
+    color: white;
+}
+#del:hover {
+    background-color: lightcoral;
+}
+
+ul {
+    border-style: double;
+    border-color: black;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    background-color: rgb(219, 255, 250);
+    width: 50%;
+}
+
+div#list {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul#list2 {
+    height: 25px;
+}
+
+#bat {
+    /* margin-right: 100px;
+    margin-top: 60px; */
+    width: 950px;
+    height: 600px;
+    margin-left: 550px;
+    margin-top: 50px;
+}
+
+#first {
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#second {
+    color: rgb(251, 247, 4);
+    font-size: larger;
+}
+
+#third {
+    color: rgb(240, 13, 248);
+    font-size: larger;
+}
+
+html {
+    background-image: url('ball.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
