@@ -1,11 +1,4 @@
 
-// constant
-let gameCnt = 0; //Counts of what number were inputed
-let outCount = 0; //Numbers of outs
-// let gameIsOver = false; //Game is not over at the beginning
-
-
-
 
 
 // function to create a random number of three digit
@@ -32,40 +25,14 @@ function getThreeRandom () {
 
 // show answer when clicked the button
 document.getElementById('showAnswer').addEventListener('click', answer);
-// let randNum = `Answer is ${getThreeRandom()}`;
 let randNum = getThreeRandom();
 
-// console.log(randNum);
+
 
 function answer() {
     alert(randNum);
-}
+};
 
-
-// function for strike, ball, and out.
-function setGame(a,b) {
-    let stCount = 0; //strike
-    let ballCount = 0; //ball
-
-    for (let i= 0; i<3; i++) {
-        if (a[i] == b[i]) {
-            stCount++; //same number and same spot makes strike
-        } else {
-            for (let k = 0; k < 3; k++) {
-                if(a[k] == b[k]){
-                    ballCount++; //same number but different spot makes ball
-                }
-            }
-        }
-    }   gameCnt++;
-
-    if (stCount == 0 && ballCount == 0) {
-        outCount++; //there are not any same numbers
-    }
-    if (stCount == 3) {
-        alert("Congratulation! You have got the right number:  " + randNum)
-    }
-}
 
 
 
@@ -92,10 +59,10 @@ document.getElementById('del').addEventListener('click', deleteNumer);
 function display(event) {
     if (event.target.id == 'btn1') {
         populateInnerHTML('1')
-        // document.getElementById('first').innerHTML = '1';
+
     } else if (event.target.id == 'btn2') {
         populateInnerHTML('2')
-        // document.getElementById('first').innerHTML = '2';
+
     } else if (event.target.id == 'btn3') {
         populateInnerHTML('3')
     } else if (event.target.id == 'btn4') {
@@ -258,39 +225,13 @@ function guessNum() {
         document.getElementById('third').innerHTML = '';
         document.getElementById('second').innerHTML = '';
         document.getElementById('first').innerHTML = '';
-    }
+    };
     
 
 
 
 
-}
-
-        
-        
-        
-        
-//         (((document.getElementById('first') == randNum[1]) || (document.getElementById('first') == randNum[2])) && ((document.getElementById('second').innerHTML == randNum[0]) || (document.getElementById('second').innerHTML == randNum[2]))) ||
-//     (((document.getElementById('first') == randNum[1]) || (document.getElementById('first') == randNum[2])) && ((document.getElementById('third').innerHTML == randNum[0]) || (document.getElementById('third').innerHTML == randNum[1]))) ||
-//     (((document.getElementById('secon') == randNum[0]) || (document.getElementById('secon') == randNum[2])) && ((document.getElementById('third').innerHTML == randNum[0]) || (document.getElementById('third').innerHTML == randNum[1])))) {
-//         if((document.getElementById('first') == randNum[0]) || (document.getElementById('second') == randNum[1]) || (document.getElementById('third') == randNum[0])) {
-//             alert('1 strike 2 balls')
-//         } else {
-//             alert('2 balls')
-//         }
-//     }
-// }
-
-
-
-
-// function guessNum() {
-//     let createNewElement = document.createElement('div');
-//     // let scoreBoard = document.createTextNode(setGame(display()));
-//     // createNewElement.appendChild(scoreBoard);
-//     document.getElementById('new1').appendChild(createNewElement);
-//     }
-
+};
 
 
 
@@ -302,8 +243,8 @@ function deleteNumer() {
         document.getElementById('second').innerHTML = ''
     } else  {
         document.getElementById('first').innerHTML = ''
-    }
-}
+    };
+};
 
 
 
