@@ -146,7 +146,6 @@ function guessNum() {
     } else if ((document.getElementById('first').innerHTML == randNum[0] && document.getElementById('second').innerHTML == randNum[1]) || 
     (document.getElementById('first').innerHTML == randNum[0] && document.getElementById('third').innerHTML == randNum[2]) || (document.getElementById('second').innerHTML == randNum[1] && document.getElementById('third').innerHTML == randNum[2])) {
         alert('2 strikes!')
- 
         document.getElementById('third').innerHTML = '';
         document.getElementById('second').innerHTML = '';
         document.getElementById('first').innerHTML = '';   
@@ -154,7 +153,6 @@ function guessNum() {
     && (document.getElementById('second').innerHTML !== randNum[0]) && (document.getElementById('second').innerHTML !== randNum[1]) && (document.getElementById('second').innerHTML !== randNum[2])
     && (document.getElementById('third').innerHTML !== randNum[0]) && (document.getElementById('third').innerHTML !== randNum[1]) && (document.getElementById('third').innerHTML !== randNum[2])) {
         alert('3 Outs! All Wrong!')
-
         document.getElementById('third').innerHTML = '';
         document.getElementById('second').innerHTML = '';
         document.getElementById('first').innerHTML = '';

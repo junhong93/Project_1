@@ -41,7 +41,7 @@ button#del {
     background-color: lightcoral;
 }
 
-ul {
+#list2 {
     border-style: double;
     border-color: black;
     list-style-type: none;
@@ -62,8 +62,6 @@ ul#list2 {
 }
 
 #bat {
-    /* margin-right: 100px;
-    margin-top: 60px; */
     width: 950px;
     height: 600px;
     margin-left: 550px;
@@ -92,4 +90,20 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#guessList1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start; 
+    color: white;
+}
+#table1 {
+    color: white;
+    background-color: maroon;
+}
+
+tr {
+  border-collapse: collapse;
 }
